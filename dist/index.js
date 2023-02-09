@@ -9788,7 +9788,7 @@ async function run(){
         ...context.repo,
         issue_number: pull_request.number,
         body: 'Thank you for submitting a pull request!'
-    })
+    });
 }
 
 run()
