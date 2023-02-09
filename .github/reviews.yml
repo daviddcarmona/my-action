@@ -1,0 +1,61 @@
+reviewers:
+  # The default reviewers
+  defaults:
+    - repository-owners # group
+    - octocat # username
+    - team:default-reviewers # GitHub team
+
+  # Reviewer groups each of which has a list of GitHub usernames
+  groups:
+    repository-owners:
+      - daviddcarmona # username
+    core-contributors:
+      - daviddcarmona # username
+    js-lovers:
+      - daviddcarmona # username
+      - mrgookis # username
+
+  # Reviewers per author.
+  # Keys are reviewees, each of which has an array of reviewers.
+  per_author:
+    engineers:
+      - engineers # group
+      - team:engineering-managers # GitHub team
+    lead_designer:
+      - js-lovers # group
+      - mrgookis # username
+    designer_a:
+      - mrgookis # username
+    designer_b:
+      - mrgookis # username
+      - daviddcarmona # username
+
+files:
+  # Keys are glob expressions.
+  # You can assign groups defined above as well as GitHub usernames.
+  "**":
+    - repository-owners # group
+    - team:external-reviewers # GitHub team
+  "**/*.js":
+    - core-contributors # group
+    - js-lovers # group
+  "**/*.yml":
+    - core-contributors # group
+    - mrgookis # username
+  ".github/**":
+    - daviddcarmona # username
+    - mrgookis # username
+
+options:
+  ignore_draft: true
+  ignored_keywords:
+    - DO NOT REVIEW
+  enable_group_assignment: false
+
+  # Randomly pick reviewers up to this number.
+  # Do not set this option if you'd like to assign all matching reviewers.
+  number_of_reviewers: 1
+
+  # If it's true, the last matching files-change pattern takes the most precedence (CODEOWNERS-compatible)
+  # See https://github.com/necojackarc/auto-request-review/pull/80 for more details.
+  last_files_match_only: false
