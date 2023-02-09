@@ -13,6 +13,8 @@ reviewers:
     js-lovers:
       - daviddcarmona # username
       - mrgookis # username
+    catalog:
+      - daviddcarmona
 
   # Reviewers per author.
   # Keys are reviewees, each of which has an array of reviewers.
