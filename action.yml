@@ -1,15 +1,15 @@
-name: 'Thank you Action'
+name: "Thank you Action"
 description: 'Say "Thank You" to new pull requests'
-author: 'daviddcarmona'
+author: "daviddcarmona"
 
 inputs:
   GITHUB_TOKEN:
-    description: 'GitHub Token'
+    description: "GitHub Token"
     required: true
   TENOR_TOKEN:
-    description: 'Tenor API token'
+    description: "Tenor API token"
     required: true
 
 runs:
-  using: 'node12'
-  main: 'dist/index.js'
+  using: "node16"
+  main: "dist/index.js"
