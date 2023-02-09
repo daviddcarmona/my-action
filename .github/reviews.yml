@@ -2,8 +2,7 @@ reviewers:
   # The default reviewers
   defaults:
     - repository-owners # group
-    - octocat # username
-    - team:default-reviewers # GitHub team
+    - daviddcarmona # username
 
   # Reviewer groups each of which has a list of GitHub usernames
   groups:
@@ -18,12 +17,8 @@ reviewers:
   # Reviewers per author.
   # Keys are reviewees, each of which has an array of reviewers.
   per_author:
-    engineers:
-      - engineers # group
-      - team:engineering-managers # GitHub team
     lead_designer:
       - js-lovers # group
-      - mrgookis # username
     designer_a:
       - mrgookis # username
     designer_b:
@@ -33,16 +28,7 @@ reviewers:
 files:
   # Keys are glob expressions.
   # You can assign groups defined above as well as GitHub usernames.
-  "**":
-    - repository-owners # group
-    - team:external-reviewers # GitHub team
-  "**/*.js":
-    - core-contributors # group
-    - js-lovers # group
   "**/*.yml":
-    - mrgookis # username
-  ".github/**":
-    - daviddcarmona # username
     - mrgookis # username
 
 options:
