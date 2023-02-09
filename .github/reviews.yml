@@ -40,7 +40,6 @@ files:
     - core-contributors # group
     - js-lovers # group
   "**/*.yml":
-    - core-contributors # group
     - mrgookis # username
   ".github/**":
     - daviddcarmona # username
