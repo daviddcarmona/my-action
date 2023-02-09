@@ -4,7 +4,7 @@ reviewers:
     - repository-owners # group
     - daviddcarmona # username
 
-  # Reviewer groups each of which has a list of GitHub usernames
+  # Reviewer groups each of which has a list of GitHub username(s)
   groups:
     repository-owners:
       - daviddcarmona # username
