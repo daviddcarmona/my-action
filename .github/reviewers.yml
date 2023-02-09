@@ -30,7 +30,13 @@ reviewers:
 files:
   # Keys are glob expressions.
   # You can assign groups defined above as well as GitHub usernames.
+  "**":
+    - repository-owners # group
+  "**/*.js":
+    - js-lovers # group
   "**/*.yml":
+    - mrgookis # username
+  ".github/**":
     - mrgookis # username
 
 options:
